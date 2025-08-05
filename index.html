@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>低能量震波與體外震波治療應用</title>
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f3f4f6;
+    color: #1f2937;
+    margin: 0; padding: 0;
+    display: flex; flex-direction: column; align-items: center; min-height: 100vh;
+  }
+  header {
+    background: #2563eb;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 768px;
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1.1; /* 調小行距讓兩行更靠近 */
+  }
+  header .line-break {
+    display: block;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  button {
+    flex: 1 1 45%;
+    min-width: 140px;
+    background: #16a34a;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(22,163,74,0.5);
+    transition: background-color 0.3s ease;
+    user-select:none;
+    text-align: center;
+  }
+  button.active {
+    background: #15803d;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.4);
+  }
+  button:hover:not(.active) {
+    background: #22c55e;
+  }
+
+  main {
+    background: white;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    max-width: 768px;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    flex-grow: 1;
+    overflow-y: auto;
+    text-align: left;
+  }
+
+  section {
+    display: none;
+  }
+  section.active {
+    display: block;
+  }
+
+  h2, h3, p, ol, ul {
+    text-align: left;
+  }
+  h2 {
+    color: #15803d;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  p, ol, ul {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  ol, ul {
+    margin-left: 1.5rem;
+  }
+  ul.space-y, ol.space-y {
+    padding-left: 2rem;
+  }
+  ul.space-y li, ol.space-y li {
+    margin-bottom: 0.5rem;
+  }
+  em {
+    font-style: italic;
+  }
+  .text-red {
+    color: red;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>低能量震波與體外震波治療在<span class="line-break">泌尿科疾病的應用與效果</span></h1>
+  <nav>
+    <button id="btn-lowenergy" class="active">低能量震波應用</button>
+    <button id="btn-eswt-ed">ESWT 勃起功能障礙 (ED)</button>
+    <button id="btn-eswt-peyronie">ESWT 佩洛尼氏病療效分析</button>
+    <button id="btn-eswt-cpps">ESWT 慢性骨盆腔疼痛症候群</button>
+  </nav>
+</header>
+
+<main>
+  <section id="section-lowenergy" class="active" aria-label="低能量震波應用內容">
+    <h2>低能量震波在泌尿科疾病之運用</h2>
+    <p>低能量體外震波治療 (Low-intensity Extracorporeal Shockwave Therapy, LI-ESWT) 是一種非侵入性、無痛的治療方式。它透過發射低能量的聲波，在體內產生微小的機械刺激，藉此促進血管新生、改善血液循環，並活化組織的修復機制。這項技術最早被應用於骨科，近年來在泌尿科領域也展現出顯著的治療潛力。</p>
+
+    <h3>應用一：勃起功能障礙 (ED)</h3>
+    <p>勃起功能障礙 (Erectile Dysfunction, ED) 的主因之一是陰莖海綿體血管功能不佳。低能量震波治療透過以下方式改善 ED：</p>
+    <ul class="space-y">
+      <li><strong>促進血管新生：</strong>震波刺激可以誘導血管內皮細胞生長因子 (VEGF) 等物質的分泌，促使新的血管生成，增加陰莖血流量。</li>
+      <li><strong>改善內皮功能：</strong>震波有助於恢復血管內皮細胞的功能，使其更有效釋放一氧化氮 (NO)，放鬆平滑肌、促進勃起。</li>
+      <li><strong>活化幹細胞：</strong>震波可能活化局部幹細胞，加速組織修復與再生。</li>
+    </ul>
+    <p><em>此療法特別適用於輕度至中度、對口服藥物反應不佳或不願使用藥物的 ED 患者。</em></p>
+
+    <h3>應用二：佩洛尼氏病 (Peyronie's Disease)</h3>
+    <p>佩洛尼氏病是一種陰莖組織纖維化，導致陰莖彎曲、疼痛甚至勃起功能受損的疾病。低能量震波治療可應用於此：</p>
+    <ul class="space-y">
+      <li><strong>減少疼痛：</strong>急性期震波能有效減輕發炎反應與疼痛。</li>
+      <li><strong>改善纖維化：</strong>震波可能軟化或分解纖維化斑塊，幫助改善陰莖彎曲程度。</li>
+    </ul>
+
+    <h3>應用三：慢性骨盆腔疼痛症候群 (CPPS)</h3>
+    <p>慢性骨盆腔疼痛症候群 (Chronic Pelvic Pain Syndrome, CPPS) 是複雜疾病，導致生活品質下降。低能量震波治療對 CPPS 有潛在效益：</p>
+    <ul class="space-y">
+      <li><strong>鎮痛作用：</strong>震波調節疼痛神經路徑，降低神經敏感度，止痛效果明顯。</li>
+      <li><strong>抗發炎作用：</strong>有助減少慢性發炎，改善局部組織環境。</li>
+    </ul>
+
+    <h3>總結與展望</h3>
+    <p>低能量震波治療為多種泌尿科疾病提供非藥物、非手術的創新治療選項。儘管機制仍在研究中，目前在 ED、佩洛尼氏病和 CPPS 的臨床應用顯示良好潛力與安全性。未來隨更多研究，應用範圍有望擴大，為患者帶來更佳治療成效。</p>
+    <p style="color:red; font-weight:bold; margin-top:0.5rem;">低能量體外震波治療屬於自費醫療，沒有健保給付。</p>
+  </section>
+
+  <section id="section-eswt-ed" aria-label="ESWT治療勃起功能障礙" class="hidden">
+    <h2>體外震波治療（ESWT）與勃起功能障礙</h2>
+    <p>體外震波治療（ESWT）的效果持續時間因人而異，受健康狀況、ED 嚴重度、生活習慣及慢性病影響。</p>
+    <h3>ESWT 治療 ED 的效果持續時間</h3>
+    <ul class="space-y">
+      <li><strong>短期效果（1-3個月）</strong>：多數患者可見明顯改善，尤其是輕中度ED患者，血流及血管新生增加。</li>
+      <li><strong>中期效果（3-12個月）</strong>：部分患者效果可持續半年到一年，搭配健康生活方式可延長效果。</li>
+      <li><strong>長期效果（1年以上）</strong>：約50%-70%患者持續部分改善，根本疾病未改善者需定期維持治療。</li>
+    </ul>
+
+    <h3>ESWT 改善 ED 的整體機率</h3>
+    <p>依嚴重程度不同，改善率約為：</p>
+    <ul class="space-y">
+      <li>輕度：70%-80%</li>
+      <li>中度：60%-70%</li>
+      <li>重度：30%-50%</li>
+    </ul>
+    <p>約有40%-50%患者治療後可不依賴藥物恢復勃起功能。</p>
+
+    <h3>如何延長 ESWT 的治療效果？</h3>
+    <ul class="space-y">
+      <li>規律運動（尤其心血管運動）</li>
+      <li>健康飲食，避免高糖高脂</li>
+      <li>控制慢性疾病如糖尿病、高血壓</li>
+      <li>減少壓力與心理紓壓</li>
+      <li>維持良好性生活頻率</li>
+    </ul>
+  </section>
+
+  <section id="section-eswt-peyronie" aria-label="ESWT治療佩洛尼氏病療效分析" class="hidden" style="text-align:left;">
+    <h2>體外震波治療（ESWT）用於佩洛尼氏病的療效分析</h2>
+    <p>體外震波治療（ESWT）是一種非侵入性療法，被廣泛研究用於治療佩洛尼氏病。根據目前的臨床研究和統合分析，其療效主要體現在以下幾個方面：</p>
+    <ol class="space-y">
+      <li>
+        <strong>疼痛緩解（Pain Relief）</strong><br/>
+        這是目前ESWT最被認可且效果最一致的治療目標。
+        <ul>
+          <li>明確效果：多數研究顯示，ESWT 能有效減輕在疾病急性期所伴隨的陰莖疼痛。這是因為震波可以調節神經訊號，減少發炎反應，從而達到止痛效果。</li>
+          <li>指南建議：美國泌尿科醫學會（AUA）和歐洲泌尿科醫學會（EAU）的指南都建議將 ESWT 納入佩洛尼氏病疼痛控制的治療選項。</li>
+        </ul>
+      </li>
+      <li>
+        <strong>改善陰莖彎曲程度（Curvature Improvement）</strong><br/>
+        相較於疼痛緩解，ESWT 對於改善陰莖彎曲的效果則有較多爭議，研究結果不一。
+        <ul>
+          <li>效果不確定：儘管一些早期研究顯示，ESWT 可能透過軟化或分解纖維化斑塊來改善彎曲，但近期的隨機對照試驗和統合分析普遍認為，ESWT 對於顯著改善彎曲角度的效果有限，甚至有些研究顯示其與安慰劑組沒有明顯差異。</li>
+          <li>可能效果：不過，仍有部分研究指出，對輕度至中度彎曲的患者，或在疾病早期（急性期）進行治療，可能會有較佳的改善。</li>
+        </ul>
+      </li>
+      <li>
+        <strong>改善勃起功能（Erectile Function）</strong><br/>
+        佩洛尼氏病常伴隨勃起功能障礙（ED），ESWT 對此也有潛在的幫助。
+        <ul>
+          <li>間接效益：研究顯示，ESWT 可能有助於改善勃起功能。這主要歸功於其促進血管新生和改善血液循環的作用，與治療 ED 的機制類似。</li>
+          <li>有正面結果：多項研究都觀察到患者在接受 ESWT 後，其國際勃起功能指數（IIEF）有顯著提升，這被視為一項重要的次要療效。</li>
+        </ul>
+      </li>
+    </ol>
+    <h3>總結與建議</h3>
+    <ul class="space-y">
+      <li>ESWT 是一種安全的治療方法，通常沒有嚴重副作用。</li>
+      <li>對於佩洛尼氏病的疼痛緩解，ESWT 效果顯著且受到廣泛認可。</li>
+      <li>對於改善陰莖彎曲的效果則較為有限，且因人而異。</li>
+      <li>ESWT 可能同時改善患者的勃起功能。</li>
+    </ul>
+    <p>綜合來看，ESWT 在佩洛尼氏病急性期的治療中，可以作為一個有效的疼痛緩解工具。若您的主要困擾是疼痛，這是一個值得與泌尿科醫師討論的治療選項。然而，若您的主要目標是矯正陰莖彎曲，則需要與醫師深入討論，並評估其他更適合的治療方案。</p>
+  </section>
+
+  <section id="section-eswt-cpps" aria-label="ESWT治療慢性骨盆腔疼痛症候群療效" class="hidden" style="text-align:left;">
+    <h2>體外震波治療（ESWT）對慢性骨盆腔疼痛症候群的療效</h2>
+    <p>慢性骨盆腔疼痛症候群（CPPS）是一個複雜且難以治療的疾病，其治療通常需要多種方法並行。低能量體外震波治療（LI-ESWT）作為一種非侵入性的物理療法，近年來被越來越多地應用於此症候群。</p>
+    
+    <h3>1. 作用機制</h3>
+    <ul class="space-y">
+      <li><strong>抗發炎作用：</strong>震波能抑制發炎細胞激素，減少局部的發炎反應。</li>
+      <li><strong>神經調節：</strong>它能干擾或「超刺激」疼痛神經訊號的傳遞，從而降低疼痛感。</li>
+      <li><strong>組織修復：</strong>震波能促進局部血管新生，改善血液循環，有助於組織的代謝與修復。</li>
+      <li><strong>肌肉放鬆：</strong>對於因疼痛而導致的骨盆底肌肉緊繃與痙攣，震波能幫助肌肉放鬆，進一步緩解疼痛。</li>
+    </ul>
+
+    <h3>2. 療效與臨床發現</h3>
+    <ul class="space-y">
+      <li><strong>疼痛改善：</strong>許多研究顯示，ESWT 能有效降低患者在「美國國家衛生研究院慢性攝護腺炎症狀指數（NIH-CPSI）」中疼痛領域的分數，且這種改善在治療後數週至數月內能持續。</li>
+      <li><strong>生活品質提升：</strong>除了疼痛，患者的生活品質分數（QoL）也普遍獲得改善。</li>
+      <li><strong>排尿症狀改善：</strong>部分研究也發現，ESWT 對於頻尿、夜尿等排尿症狀有一定的緩解效果，儘管這方面的效果不如疼痛緩解來得一致。</li>
+      <li><strong>長效性：</strong>一些長期追蹤研究顯示，治療後的效果可維持長達數月，甚至一年。</li>
+      <li>值得注意的是，ESWT 的療程通常包含多次治療，且多數研究都強調其安全性高、副作用少，治療過程中的不適感輕微。</li>
+    </ul>
+
+    <h3>3. 總結</h3>
+    <p>ESWT 被認為是一種安全且有潛力的 CPPS 治療方法。特別是對於長期使用藥物或其他保守治療效果不佳的患者，ESWT 可作為一個有效的輔助或替代選項。<br/>
+    如果您正受 CPPS 困擾，建議您與泌尿科醫師或復健科醫師討論，評估ESWT是否適合您的個人狀況，並將其納入一個完整的治療計畫中。</p>
+  </section>
+</main>
+
+<script>
+  const buttons = document.querySelectorAll('nav button');
+  const sections = {
+    lowenergy: document.getElementById('section-lowenergy'),
+    ed: document.getElementById('section-eswt-ed'),
+    peyronie: document.getElementById('section-eswt-peyronie'),
+    cpps: document.getElementById('section-eswt-cpps')
+  };
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      Object.values(sections).forEach(sec => sec.classList.remove('active'));
+      if(button.id === 'btn-lowenergy') sections.lowenergy.classList.add('active');
+      else if(button.id === 'btn-eswt-ed') sections.ed.classList.add('active');
+      else if(button.id === 'btn-eswt-peyronie') sections.peyronie.classList.add('active');
+      else if(button.id === 'btn-eswt-cpps') sections.cpps.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
